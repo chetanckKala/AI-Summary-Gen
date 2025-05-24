@@ -1,0 +1,37 @@
+{
+    "manifest_version" : 3,
+    "name" : "AI Summary Gen",
+    "version" : "1.0.0",
+    "description" : "A browser extension to generate AI summaries.",
+
+    "icons": {
+        "48": "icons/icons8-ai-48.png",
+        "96": "icons/icons8-ai-96.png",
+        "144": "icons/icons8-ai-144.png",
+        "240": "icons/icons8-ai-240.png"
+    },
+
+
+    "action" : {
+        "default_popup" : "popup.html",
+        "default_icon" : {
+            "48": "icons/icons8-ai-48.png",
+            "96": "icons/icons8-ai-96.png"
+        }
+    },
+
+
+    "permissions" : ["storage", "activeTab", "contextMenus", "scripting"],
+    "options_page" : "options.html",
+    "background" : {
+        "service_worker" : "background.js"
+    },
+
+    "content_scripts" : [{
+        "matches" : ["<all_urls>"],
+        "js" : ["content.js"],
+        "css" : ["content.css"]
+    }],
+
+    "host_permissions" : ["<all_urls>"] 
+}

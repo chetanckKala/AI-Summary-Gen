@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <div class="container">
+    <h2>AI Summary Generator</h2>
+
+    <div id="nav">
+
+        <select id="summaryOptions">
+            <option value="brief">Brief</option>
+            <option value="detailed">Detailed</option>
+            <option value="bullet">Bullet Points</option>
+        </select>
+
+        <button id="gen"><img src="gemini.svg" alt=""> Generate</button>
+
+        <button id="copy"><i class="fa-solid fa-copy"></i> Copy</button>
+
+    </div>
+
+    <div id="result">
+        <pre id="summary" placeholder="Select an option and generate..."></pre>
+    </div>
+    
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
