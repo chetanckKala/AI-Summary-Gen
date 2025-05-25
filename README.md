@@ -4,7 +4,7 @@
 
 **AI Summary Generator** is a Chrome extension that provides instant, AI-powered summaries of any web article, blog, or news post — right in your browser.
 
-Whether you're researching, skimming news, or reviewing long content, this extension helps you **save time** by giving you a concise summary using **OpenAI GPT**.
+Whether you're researching, skimming news, or reviewing long content, this extension helps you **save time** by giving you a concise summary using **Google Gemini**.
 
 ---
 
@@ -24,8 +24,8 @@ Whether you're researching, skimming news, or reviewing long content, this exten
 1. You visit any article or blog.
 2. Click on the **AI Summary Generator** icon in the toolbar.
 3. The extension reads the main content of the page.
-4. It sends the content to the **OpenAI API** (GPT-3.5 or GPT-4).
-5. A readable, bullet-style summary appears in the popup.
+4. It sends the content to the **Gemini API**.
+5. A readable, bullet-style summary appears in the pop-up.
 6. Optionally, you can copy, save, or export the summary.
 
 ---
@@ -36,17 +36,18 @@ Whether you're researching, skimming news, or reviewing long content, this exten
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable **Developer Mode** (top-right corner)
 4. Click **"Load Unpacked"** and select the project folder
-5. Click the toolbar icon on any article to generate a summary
+5. Create and provide your Gemini API key (to protect user's privacy).
+6. Click the toolbar icon on any article to generate a summary
 
 ---
 
 ## 🧪 Tech Stack
 
 * **Chrome Extensions API (Manifest V3)**
-* **JavaScript (Vanilla)**
-* **OpenAI GPT-3.5 / GPT-4 API**
+* **JavaScript**
+* **Google Gemini API**
 * **DOM scraping & content extraction**
-* Optional: `chrome.storage` for local saving
+* `chrome.storage` for local saving
 
 ---
 
@@ -65,18 +66,17 @@ Whether you're researching, skimming news, or reviewing long content, this exten
 
 To use the OpenAI API:
 
-1. Get your API key from [https://platform.openai.com](https://platform.openai.com)
-2. Add it to your project in a `config.js` or inject it using environment variables (for security)
-3. **⚠️ Never hardcode your API key in a public GitHub repo!**
+1. Get your API key from [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+2. Add it to your project
 
 ---
 
 ## 🛠️ Coming Soon
 
-* 📝 Summary formats: bullet, paragraph, headline
+* 📝 Export to pdf
 * 📚 Save summaries per URL
 * 🔄 Retry & refine options
 * 🌗 Dark mode popup UI
-* 🧑‍💼 Enterprise article parser support (Medium, Substack, Dev.to)
+* 🧑‍💼 Chat with article
 
 ---
