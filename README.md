@@ -1,7 +1,5 @@
 # 📄 AI Summary Generator – Chrome Extension
 
-## 🧠 What is this?
-
 **AI Summary Generator** is a Chrome extension that provides instant, AI-powered summaries of any web article, blog, or news post — right in your browser.
 
 Whether you're researching, skimming news, or reviewing long content, this extension helps you **save time** by giving you a concise summary using **Google Gemini**.
